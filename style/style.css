@@ -82,7 +82,7 @@ main {
     }
 
     h1 {
-        font-size: clamp(3rem, 10vw, 8rem);
+        font-size: clamp(3rem, 8vw, 6rem);
         font-family: ProductBold;
         margin: auto;
     }
@@ -122,9 +122,9 @@ main {
         gap: 24px;
 
         a {
-            padding: 8px;
+            padding: 12px;
             border-radius: 8px;
-            color: black;
+            color: #6e6f72;
             text-decoration: none;
             border: solid 1px transparent;
         }
@@ -145,11 +145,11 @@ footer {
 
     p {
         border-bottom: solid 1px #dfe1e5;
-        padding: 24px;
+        padding: 16px;
     }
 
     div {
-        padding: 24px;
+        padding: 16px;
         gap: 16px;
         display: flex;
         flex-direction: row;
@@ -164,6 +164,15 @@ footer {
                 max-height: 16px;
                 padding: 4px;
             }
+        }
+
+        a {
+            color: #202124;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     }
 }
