@@ -1,9 +1,19 @@
+@font-face {
+    font-family: Product;
+    src: url(../static/fonts/Product\ Sans\ Regular.ttf);
+}
+
+@font-face {
+    font-family: ProductBold;
+    src: url(../static/fonts/Product\ Sans\ Bold.ttf);
+}
+
 html {
     max-height: 100vh;
     font-size: 16px;
     background-color: #ffffff;
     color: #202124;
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: Product, Arial, sans-serif;
 }
 
 html, body {
@@ -72,7 +82,8 @@ main {
     }
 
     h1 {
-        font-size: clamp(3rem, 8vw, 6rem);
+        font-size: clamp(3rem, 10vw, 8rem);
+        font-family: ProductBold;
         margin: auto;
     }
 
@@ -95,10 +106,12 @@ main {
         input {
             flex-grow: 1;
             border: none;
+            background: #f8f9fa;
         }
 
         textarea:focus, input:focus{
             outline: none;
+            background: #f8f9fa;
         }
     }
 
@@ -148,7 +161,8 @@ footer {
             align-items: center;
 
             img {
-                max-height: 24px;
+                max-height: 16px;
+                padding: 4px;
             }
         }
     }
